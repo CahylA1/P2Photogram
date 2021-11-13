@@ -19,13 +19,7 @@ db.on('disconnected', () => console.log('mongo disconnected'))
 ////// MIDDLEWARE //////
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }))
-<<<<<<< HEAD
-app.use(express.static(__dirname + '/public'));
-app.use(layouts);
-=======
 app.use(require('method-override')('_method'));
->>>>>>> 6a052eb824ab1d0d6c8b1414f027e5980131c218
-
 
 /////INDUCES ROUTES/////
 const gallerySeed = require('./models/gallerySeed.js')
