@@ -1,0 +1,21 @@
+    <h1 style="color: tan;" class="title">Show Room</h1>
+    <a href="/">Home Page</a>
+    <ul>
+        <% for(let i = 0; i < allPhotos.length; i++) { %>
+            <li>
+                <a href="/gallery/<%=allPhotos[i]._id %>">
+                    <%=allPhotos[i].name%>
+                </a>
+            </li>
+        <% } %>
+    </ul>
+<<<<<<< HEAD
+=======
+<div>
+    <button type="submit">
+        <a href="/gallery/:id/edit">Add Photo</a>
+    </button>
+</div>
+</body>
+</html> 
+>>>>>>> 6a052eb824ab1d0d6c8b1414f027e5980131c218
