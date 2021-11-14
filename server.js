@@ -20,7 +20,7 @@ db.on('disconnected', () => console.log('mongo disconnected'))
 app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: true }))
 app.use(require('method-override')('_method'));
-// app.use(express.static('public'))
+app.use(express.static('public'))
 app.use(layouts);
 
 
